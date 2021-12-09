@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!--
+Copyright 2017 Google Inc.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Prototype Made By Kiju Dev.
+URL : https://2kiju.tistory.com/
+
+Reference By https://github.com/samdutton/simpl/blob/
+https://github.com/samdutton/simpl/blob/gh-pages/getusermedia/sources/js/main.js
+-->
+
+<html lang="en">
+  <head>
+  <script>
+    //  philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build
+    window.ga = window.ga || function() {
+      (ga.q = ga.q || []).push(arguments);
+    };
+    ga('create', 'UA-33848682-1', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="description" content="examples of HTML, CSS and JavaScript.">
+  <link rel='stylesheet' type='text/css' href='./css/styles.css'>
+  <base target="_blank">
+  <title>Simple Web Cam</title>
+  </head>
+  <header>
+    <h1>Simple Web Cam</h1>
+  </header>
+  <body>
+  <div class="bg-white">
+    <div id="selector-box">
+      <div class="select">
+        <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+      </div>
+
+      <div class="select">
+        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+      </div>
+    </div>
+
+    <video autoplay muted laysinline></video>
+    <canvas style="display:none;"></canvas>
+    <div>
+      <button>Capture</button>
+    </div>
+    <img id="steel-shot" src = "">
+  </div>
+    <script async src="js/browser.js"></script>
+    <script async src="js/media.js"></script>
+    <script async src="js/event.js"></script>
+  </body>
+  <footer>
+    <p>Hello!<br>made by Dev. kiju2<br>
+    LICENSE <a href="./LICENSE">MIT License</a><br>
+    and My blog is <a href="https://2kiju.tistory.com/">here</a>
+  </p>
+  </footer>
+</html>
